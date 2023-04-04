@@ -9,7 +9,7 @@ Given('the user sets {string} as Project Name on the Add Project popup', async f
 
 Given('the user select the {string} color', async function (this: Context, projectColor: string) {
     this.scenarioContext['PROJECTCOLOR'] = projectColor;
-    await addProjectPane.ClickDropdownSelectColor(projectColor);
+    await addProjectPane.ClickButtonDropdown(projectColor);
 });
 
 Given('the user select the {string} Toggle', async function (this: Context, textNameOption: string) {
