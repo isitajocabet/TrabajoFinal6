@@ -7,18 +7,18 @@ Given('the user sets {string} as Project Name on the Add Project popup', async f
     await addProjectPane.setProjectName(projectName);
 });
 
-Given('the user select the {string} color', async function (this: Context, projectColor: string) {
-    this.scenarioContext['PROJECTCOLOR'] = projectColor;
+Given('the user selects the {string} color on the Add Project popup', async function (this: Context, projectColor: string) {
+    this.scenarioContext['COLOR'] = projectColor;
     await addProjectPane.ClickButtonDropdown(projectColor);
 });
 
-Given('the user select the {string} Toggle', async function (this: Context, textNameOption: string) {
-    this.scenarioContext['TEXTNAMEOPTION'] = textNameOption;
+Given('the user select the {string} Toggle on the Add Project popup', async function (this: Context, textNameOption: string) {
+    this.scenarioContext['NAMEOPTION'] = textNameOption;
     await addProjectPane.ClickTextOption(textNameOption);
 })
 
-Given('the user select the {string} view option', async function (this: Context, textNameOption: string) {
-    this.scenarioContext['TEXTNAMEOPTION'] = textNameOption;
+Given('the user select the {string} view option on the Add Project popup', async function (this: Context, textNameOption: string) {
+    this.scenarioContext['VIEWOPTION'] = textNameOption;
     await addProjectPane.ClickTextOption(textNameOption);
 })
 
